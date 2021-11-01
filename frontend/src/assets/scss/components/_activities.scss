@@ -1,0 +1,92 @@
+.board-log-container {
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 45%;
+  background-color: #fdfdfd;
+  z-index: 15;
+  height: 100%;
+  padding: 20px 22px;
+  box-shadow: -1px 0px 15px -4px #9da0ad;
+  @include scrollbars(9px, #afafaf);
+  .log-header {
+    h2 {
+      margin: 5px 0 25px 0;
+      font-size: rem(18px);
+      font-weight: 500;
+    }
+    .close-log-btn {
+      background-color: white;
+      border: none;
+      border-radius: 4px;
+      color: #bdcae2;
+      margin-left: -4px;
+      font-size: 16px;
+      &:hover {
+        background-color: #e6e9ef;
+      }
+    }
+  }
+
+  .activities-container {
+    ul {
+      color: rgb(105, 105, 105);
+      font-size: rem(16px);
+      font-weight: 300;
+      margin-top: 10px;
+      padding: 0;
+      li {
+        box-shadow: 0px 0px 0px 0.4px #908e8e;
+        border-radius: 3px;
+        padding: 20px 0;
+        margin-bottom: 10px;
+        .activity-details {
+          padding: 10px 15px;
+        }
+        div {
+          margin: 4px 0 0 8px;
+        }
+      }
+      .avatar-user {
+        margin-left: 12px;
+      }
+    }
+  }
+  .activity-details {
+    padding-left: 35px;
+    .activity-date {
+      margin-top: 3px;
+      font-weight: 500;
+      font-size: rem(13px);
+      .time-icon{
+        font-size: rem(16px);
+        margin-right: 3px;
+      }
+    }
+  }
+
+  .activity-footer {
+    height: 30px;
+    border-top: solid 0.5mm rgb(199, 199, 199);
+    .log-btn {
+      padding: 0 7px;
+      height: 30px;
+      background-color: $btn_blue;
+      font-size: rem(12px);
+      white-space: nowrap;
+      border-radius: 3px;
+      border: none;
+      margin-right: 3px;
+      width: 100px;
+      position: relative;
+      // right: 0;
+      margin-top: 6px;
+      text-transform: capitalize;
+      &:hover {
+        background-color: $btn_blue_hover;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.board-preview {
+  padding: 0 8px;
+  flex-grow: 1;
+  overflow-y: auto;
+  @include scrollbars(9px, #afafaf);
+}

@@ -1,0 +1,105 @@
+.chat-container {
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 45%;
+  background-color: #fdfdfd;
+  transition: width 0.2s ease-in-out;
+  z-index: 15;
+  height: 100%;
+  padding: 20px 22px;
+  box-shadow: -1px 0px 15px -4px #9da0ad;
+  @include scrollbars(9px, #afafaf);
+  .chat-msg-input {
+    background-color: $white;
+    border: solid 0.5mm $btn_blue;
+    border-radius: 5px;
+    min-width: 100%;
+    min-height: 40px;
+    font-size: rem(16px);
+    font-weight: 300;
+    padding-left: 15px;
+    color: $black;
+  }
+  .chat-update-btn {
+    padding: 0 7px;
+    height: 30px;
+    background-color: $btn_blue;
+    font-size: rem(12px);
+    white-space: nowrap;
+    border-radius: 3px;
+    border: none;
+    margin-right: 3px;
+    width: 60px;
+    position: relative;
+    // right: 0;
+    margin-top: 6px;
+    &:hover {
+      background-color: $btn_blue_hover;
+    }
+  }
+  .chat-header-container {
+    h2 {
+      margin: 5px 0 25px 0;
+      font-size: rem(18px);
+      font-weight: 500;
+    }
+    button {
+      background-color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 2px 4px;
+      margin-left: -7px;
+      color: #bdcae2;
+      &:hover {
+        background-color: #e6e9ef;
+      }
+    }
+    input {
+      color: "#323338";
+      font-weight: 500;
+      font-size: rem(18px);
+      border: solid 0.3px #848c94;
+      border-radius: 4px;
+      padding: 1px 0 1px 4px;
+      width: 500px;
+    }
+  }
+
+  .chat-msgs-container {
+    ul {
+      color: rgb(105, 105, 105);
+      font-size: rem(16px);
+      font-weight: 300;
+      margin-top: 10px;
+      padding: 0;
+      li {
+        box-shadow: 0px 0px 0px 0.4px #908e8e;
+        border-radius: 3px;
+        padding: 0px 0 60px 5px;
+        margin-bottom: 10px;
+        span {
+          margin: 0px 0 0 8px;
+          div {
+            margin: 4px 0 0 8px;
+          }
+        }
+        .msg-txt-container {
+          pre {
+            margin: 0px 0 0 20px;
+            font-family: Roboto;
+          }
+        }
+        .chat-img-container {
+          display: flex;
+          justify-content: center;
+          img {
+            max-width: 300px;
+          }
+        }
+      }
+    }
+  }
+}

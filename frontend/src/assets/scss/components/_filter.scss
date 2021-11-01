@@ -1,0 +1,28 @@
+.filter-section {
+  h1 {
+    color: rgb(231, 229, 229);
+    font-size: 18px;
+  }
+  form {
+    background-color: rgba(70, 70, 70, 0.582);
+    padding: 0 10px;
+    border-radius: 8px;
+    color: rgb(231, 229, 229);
+    input {
+      margin: 0 5px;
+      color: rgb(231, 229, 229);
+    }
+    > * {
+      padding: 5px;
+    }
+    @include for-mobile-layout {
+      flex-direction: column;
+      div:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

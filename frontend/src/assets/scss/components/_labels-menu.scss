@@ -1,0 +1,43 @@
+.labels-menu-container {
+  cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    & .selected-label {
+        font-size: rem(12px);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+    }
+
+    & .labels-menu {
+        font-size: rem(12px);
+        padding: 5px;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        top: 100%;
+        right: 0;
+        z-index: 10;
+        grid-gap: 2px;
+        box-shadow: 0px 0px 10px 0px rgba(71, 71, 71, 0.349);
+    }
+
+    & .label-item {
+        font-size: rem(12px);
+        text-align: center;
+        height: 32px;
+        display: flex;
+        color: $white;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin: 1px;
+    }
+}

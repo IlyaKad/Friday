@@ -1,0 +1,49 @@
+.users-menu-container {
+    position: absolute;
+    background-color: #fff;
+    top: 48px;
+    right: 142px;
+    box-shadow: 0 0 4px 2px #e6e5e5;
+    border-radius: 6px;
+    z-index: 999;
+    min-width: 250px;
+    max-height: 400px;
+    padding: 20px 10px;
+    overflow-y: auto;
+    span {
+        font-family: Roboto;
+        font-size: rem(14px);
+        font-weight: 300;
+    }
+
+    .person-preview {
+        padding: 5px;
+        color: #097af3;
+        transition: 0.2s;
+        border-radius: 4px;
+        .avatar-container {
+            width: 24px;
+            height: 24px;
+            background-color: #636363;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        span {
+            font-family: Roboto;
+            padding-left: 10px;
+            font-size: rem(13px);
+            font-weight: 300;
+        }
+        &:hover {
+            background-color: #097af3;
+            color: lightcyan;
+        }
+        .user-menu-btn {
+            cursor: pointer;
+            display: flex;
+            flex-grow: 1;
+            justify-content: flex-end;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+// Setup
+@import "setup/variables.scss";
+@import "setup/functions.scss";
+@import "setup/mixins.scss";
+@import "setup/typography.scss";
+
+// Basics
+@import "basics/helpers.scss";
+@import "basics/layout.scss";
+@import "basics/base.scss";
+@import "basics/buttons.scss";
+
+// Pages
+@import "pages/member-details.scss";
+@import "pages/home.scss";
+@import "pages/login.scss";
+
+//Components
+@import "components/side-header.scss";
+@import "components/side-nav.scss";
+@import "components/board-header.scss";
+@import "components/board-preview.scss";
+@import "components/task-preview.scss";
+@import "components/group-preview.scss";
+@import "components/labels-menu.scss";
+@import "components/date-picker.scss";
+@import "components/color-palette.scss";
+@import "components/users-menu.scss";
+@import "components/members-avatars.scss";
+@import "components/group-dropdownactions.scss";
+@import "components/chat-modal.scss";
+@import "components/text-editorl.scss";
+@import "components/activities.scss";
+@import "components/confirm-modal.scss";
+@import "components/progress-bar.scss";

@@ -1,0 +1,179 @@
+.main-sidenav {
+  position: relative;
+  background-color: $verylightgrey;
+  width: 220px;
+  height: 100%;
+  padding: rem(20px) rem(8px);
+  border-right: rem(1px) solid rgba(51, 51, 51, 0.16470588235294117);
+  transition: width 0.2s ease-in-out;
+  &.hide {
+    width: 30px;
+  }
+  .content-container {
+    transition: 0.5s ease-in-out;
+    visibility: visible;
+    &.opacity-hide {
+      visibility: hidden;
+      transition: 0.1s ease-in-out;
+      opacity: 0;
+    }
+  }
+  .my-workspace {
+    width: 135px;
+    position: relative;
+    margin: 0 0 25px 6px;
+    div {
+      background-color: #d880bd;
+      color: $white;
+      width: rem(25px);
+      height: rem(25px);
+      margin-right: rem(4px);
+      border-radius: rem(8px);
+      align-items: center;
+      justify-content: center;
+    }
+    .home-icon {
+      position: absolute;
+      font-size: 1rem;
+      bottom: -5px;
+      left: rem(14px);
+      fill: #333;
+      background-color: #f5f6f8;
+      border-radius: 50%;
+    }
+    h1 {
+      font-size: rem(14px);
+      font-weight: 600;
+      margin: 5px 0px 0px 5px;
+    }
+  }
+  .board-filter-section {
+    margin-bottom: 10px;
+    form {
+      border: none;
+      width: 100%;
+      background-color: #f5f6f8;
+      transition: 0.3s ease;
+      input {
+        background-color: #f5f6f8;
+        border: none;
+        padding: rem(10px) rem(8px);
+        &:hover {
+          background-color: rgba(148, 151, 165, 0.26);
+          border-radius: rem(3px);
+        }
+      }
+      div,
+      input {
+        width: 100%;
+      }
+    }
+  }
+  .my-boards-title {
+    box-shadow: 0px -1.1px 0px 0px #e7e7e7f5;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 600;
+    padding: 20px 8px 10px 8px;
+  }
+  .add-board-btn {
+    padding: rem(10px) rem(6.5px);
+    margin-bottom: rem(25px);
+    cursor: pointer;
+    align-content: center;
+    :first-child {
+      margin-right: 3px;
+      font-size: rem(15px);
+      font-weight: 400;
+    }
+    span {
+      font-size: rem(13px);
+    }
+  }
+  .add-board-form {
+    margin-bottom: rem(32px);
+  }
+  .add-board-btn:hover {
+    background-color: rgba(148, 151, 165, 0.26);
+    border-radius: rem(3px);
+  }
+  ul {
+    padding: 0px;
+    cursor: pointer;
+    .MuiSvgIcon-root {
+      font-size: 25px;
+      padding-left: 3px;
+    }
+
+    .active {
+      background-color: #cce5ff;
+      a {
+        color: #127eeb;
+      }
+    }
+
+    .board-link-container {
+      font-size: rem(14px);
+      justify-content: space-between;
+      padding: 5px 6px 5px 0px;
+      border-radius: rem(3px);
+      transition: all 0.2s;
+
+      & a {
+        width: 100%;
+        color: $black;
+        padding: 5px 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .board-link-container:hover {
+      background-color: rgba(148, 151, 165, 0.26);
+      .delete-icon {
+        transition: all 0.4s;
+        opacity: 1;
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+    .delete-icon {
+      opacity: 0;
+      color: #acacac;
+      font-size: rem(21px);
+      transition: opacity backgroundcolor 2s;
+    }
+  }
+
+  .toggle-nav-btn {
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+    right: -13px;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    border-radius: 50%;
+    transition: background 0.2s ease;
+    background-color: #f9f9f9;
+    color: #333;
+    border: 1px solid rgba(51, 51, 51, 0.16470588235294117);
+    &:hover {
+      background-color: rgb(197, 199, 206);
+    }
+    .toggle-nav-close-icon {
+      transform: translate(3px, 1px);
+      font-size: rem(12px);
+    }
+    .toggle-nav-open-icon {
+      transform: translate(1px, 1px);
+      font-size: rem(12px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-sidenav.hide {
+    width: 17px;
+  }
+}

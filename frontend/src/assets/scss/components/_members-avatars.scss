@@ -1,0 +1,26 @@
+.MuiAvatarGroup-root .MuiAvatar-root.MuiAvatar-circle {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5 !important;
+  border: none;
+  font-size: 10px;
+  font-weight: 300;
+  background-color: #9c4370;
+}
+
+.member-avatars-main {
+  .avatar-group {
+    .avatar-container {
+      width: 24px;
+      height: 24px;
+      background-color: #636363;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      border: solid 0.5px rgb(243, 243, 243);
+    }
+  }
+}

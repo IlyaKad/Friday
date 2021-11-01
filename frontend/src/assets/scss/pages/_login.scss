@@ -1,0 +1,14 @@
+.login-form {
+ min-width: 400px;
+ color: $white;
+    .lock-sign-container {
+        border: solid 1.5px;
+        border-radius: 33px;
+        color: $white;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        max-width: fit-content;
+    }
+}

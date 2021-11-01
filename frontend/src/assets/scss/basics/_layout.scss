@@ -1,0 +1,38 @@
+.board-app-container {
+  height: 100vh;
+  // .app-main-container{
+  //   flex-grow: 1;
+  // }
+}
+
+.loading {
+  margin-top: 20%;
+  margin-left: 45%;
+  border: 16px solid $black;
+  border-top: 16px solid $blue;
+  border-right: 16px solid $green;
+  border-bottom: 16px solid $red;
+  border-left: 16px solid $yellow;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2.5s linear infinite;
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}
+  .main-container {
+  flex-grow: 1;
+  background-color: rgb(247, 247, 247);
+}
+
+.app-btns-container {
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.MuiGrid-spacing-xs-1 {
+  width: calc(100% + 4px);
+}

@@ -1,0 +1,33 @@
+.progress-bar-section {
+  display: grid;
+  grid-template-columns: minmax(360px, 1fr) $grid_item 120px $grid_item $grid_item 3px;
+  margin-left: 38px;
+  grid-gap: 1px 2px;
+  .progress-bar-status {
+    grid-column: 2/3;
+    margin-top: 1px;
+    padding: 5px;
+    background: #eeeeee;
+    border-radius: 2px;
+    height: 32px;
+
+    .progress-bar-unit {
+      color: rgba(255, 255, 255, 0);
+      height: 100%;
+    }
+  }
+
+  .progress-bar-priority {
+    grid-column: 4/5;
+    margin-top: 1px;
+    padding: 5px;
+    background: #eeeeee;
+    border-radius: 2px;
+    height: 32px;
+
+    .progress-bar-unit {
+      color: rgba(255, 255, 255, 0);
+      height: 100%;
+    }
+  }
+}

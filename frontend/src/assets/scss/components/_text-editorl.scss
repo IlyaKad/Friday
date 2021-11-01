@@ -1,0 +1,80 @@
+.text-editor-wrapper {
+  padding: 1.5px;
+  box-shadow: 0px 0px 2.1px 0.385px #2f9aff;
+  border-radius: 8px;
+  .editor-txt-area {
+    font-size: 14px;
+    padding-left: 10px;
+    margin: 10px 0 40px 0;
+    overflow: inherit;
+    .rdw-suggestion-dropdown {
+      width: 160px;
+      box-shadow: 0px 0px 2.1px 0.385px #2f9aff;
+      cursor: pointer;
+      @include scrollbars(9px, #afafaf);
+      & :hover {
+        color: #2f9aff;
+      }
+    }
+  }
+  .rdw-image-modal {
+    top: 25px;
+    right: 10px;
+    box-shadow: none;
+    left: auto;
+    border-radius: 3px;
+    box-shadow: 0px 0px 4px 1px #cfcfcff5;
+    .rdw-image-modal-header {
+      justify-content: center;
+    }
+    .rdw-image-modal-url-input {
+      width: 95%;
+    }
+    .rdw-image-modal-url-input,
+    .rdw-image-modal-size-input {
+      border: 1px solid #908e8e;
+    }
+    .rdw-image-modal-btn-section {
+      & > * {
+        border: none;
+      }
+      & :first-child {
+        color: #fff;
+        background-color: #0085ff;
+        border-radius: 3px;
+        &:hover {
+          box-shadow: 0px 0px 1px 0px #908e8e;
+        }
+      }
+      & :last-child {
+        background-color: rgb(255, 196, 196);
+        &:hover {
+          box-shadow: 0px 0px 1px 0px #908e8e;
+        }
+      }
+    }
+  }
+}
+.rdw-editor-toolbar {
+  border: none;
+}
+.txt-editor-toolbar {
+  box-shadow: 0px 2px 1.4px -1.7px #b1aeae;
+  font-size: 12px;
+  img {
+    width: 75%;
+    border: none;
+  }
+  .rdw-option-wrapper {
+    padding: 12px 8px;
+    border: none;
+    border-radius: 3px;
+    &:hover {
+      background: #e5e7eb;
+      box-shadow: none;
+    }
+  }
+  .rdw-dropdown-wrapper {
+    box-shadow: none;
+  }
+}
